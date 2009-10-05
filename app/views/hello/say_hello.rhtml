@@ -1,0 +1,17 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<% 4.times do |count| %>
+  Counter <%= count %>
+  <br/>
+  My greeting message is <%= @hello.greeting %>
+  <br/>
+  The current time is <%= Time.now %>
+  <br/>
+  My name is <%= @hello.name %>
+  <br/>
+<% end %>
+
+<%= link_to "Go to Goodbye", :action=>"say_goodbye" %>

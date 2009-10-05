@@ -1,0 +1,505 @@
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.171943)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.003109)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.095564)[0m   [0;1mCREATE DATABASE `helloworld_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001061)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000835)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.033665)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.522233)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.515229)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.002496)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.004350)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateMessages (20090922175659)
+  [4;35;1mSQL (0.017025)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.089570)[0m   [0;1mCREATE TABLE `messages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `greeting` varchar(255) DEFAULT NULL NULL, `created_at` datetime DEFAULT NULL NULL, `updated_at` datetime DEFAULT NULL NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.061877)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090922175659')[0m
+  [4;36;1mSQL (0.002433)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002669)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.094614)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mSQL (0.021149)[0m   [0mdescribe `messages`[0m
+  [4;36;1mSQL (0.067485)[0m   [0;1mSHOW KEYS FROM `messages`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001006)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000858)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMessage Columns (0.041856)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-23 12:46:57) [GET]
+  Session ID: bd8d1c821004f40ed8d5c250d1df1450
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001486)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001250)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+ActionController::UnknownAction (No action responded to index):
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HelloController#sayhello (for 127.0.0.1 at 2009-09-23 12:48:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"sayhello"}
+
+
+ActionController::UnknownAction (No action responded to sayhello):
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HelloController#say_hello (for 127.0.0.1 at 2009-09-23 12:48:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_hello"}
+  [4;36;1mMessage Columns (0.017971)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.06404 (15 reqs/sec) | Rendering: 0.01440 (22%) | DB: 0.02071 (32%) | 200 OK [http://localhost/hello/say_hello]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-23 12:50:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;35;1mMessage Columns (0.009853)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.04090 (24 reqs/sec) | Rendering: 0.00451 (11%) | DB: 0.00985 (24%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 10:44:04) [GET]
+  Session ID: 15128b6e1db80ba5af0e7f8b8a67ff61
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000908)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000866)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMessage Columns (0.112365)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.19822 (5 reqs/sec) | Rendering: 0.01950 (9%) | DB: 0.11414 (57%) | 200 OK [http://localhost/]
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000988)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000837)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.065335)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.010291)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMessages (20090922175659)
+  [4;36;1mSQL (0.001715)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddNameToMessage (20090928145408)
+  [4;35;1mSQL (0.001787)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.373352)[0m   [0;1mALTER TABLE `messages` ADD `name` varchar(255)[0m
+  [4;35;1mSQL (0.136979)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090928145408')[0m
+  [4;36;1mSQL (0.002120)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002705)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.019766)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mSQL (0.019618)[0m   [0mdescribe `messages`[0m
+  [4;36;1mSQL (0.006809)[0m   [0;1mSHOW KEYS FROM `messages`[0m
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 11:07:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;35;1mMessage Columns (0.014306)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.06217 (16 reqs/sec) | Rendering: 0.01178 (18%) | DB: 0.01431 (23%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 11:22:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;36;1mMessage Columns (0.009186)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.04102 (24 reqs/sec) | Rendering: 0.00920 (22%) | DB: 0.00919 (22%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 11:22:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;35;1mMessage Columns (0.025270)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.07281 (13 reqs/sec) | Rendering: 0.00483 (6%) | DB: 0.02527 (34%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 11:22:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;36;1mMessage Columns (0.009534)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.04767 (20 reqs/sec) | Rendering: 0.00423 (8%) | DB: 0.00953 (20%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 11:22:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;35;1mMessage Columns (0.009029)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.05461 (18 reqs/sec) | Rendering: 0.00620 (11%) | DB: 0.00903 (16%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 13:35:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;36;1mMessage Columns (0.009767)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.07501 (13 reqs/sec) | Rendering: 0.02733 (36%) | DB: 0.00977 (13%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#say_goodbye (for 127.0.0.1 at 2009-09-28 13:35:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_goodbye"}
+Rendering hello/say_goodbye
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.greeting) on line #3 of hello/say_goodbye.html.erb:
+1: <%#
+2: # To change this template, choose Tools | Templates
+3: # and open the template in the editor.
+4: %>
+5: 
+6: <%= @goodbye.greeting %>
+
+    app/views/hello/say_goodbye.html.erb:3:in `_run_erb_47app47views47hello47say_goodbye46html46erb'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:259:in `render_with_a_layout'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1168:in `perform_action'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 13:36:25) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;35;1mMessage Columns (0.009282)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.04752 (21 reqs/sec) | Rendering: 0.00547 (11%) | DB: 0.00928 (19%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#say_goodbye (for 127.0.0.1 at 2009-09-28 13:36:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_goodbye"}
+  [4;36;1mMessage Columns (0.022099)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_goodbye
+Completed in 0.07704 (12 reqs/sec) | Rendering: 0.01611 (20%) | DB: 0.02210 (28%) | 200 OK [http://localhost/hello/say_goodbye]
+
+
+Processing HelloController#Say Hello (for 127.0.0.1 at 2009-09-28 13:36:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"Say Hello"}
+
+
+ActionController::UnknownAction (No action responded to Say Hello):
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HelloController#say_goodbye (for 127.0.0.1 at 2009-09-28 13:36:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_goodbye"}
+  [4;35;1mMessage Columns (0.010469)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_goodbye
+Completed in 0.04614 (21 reqs/sec) | Rendering: 0.00501 (10%) | DB: 0.01047 (22%) | 200 OK [http://localhost/hello/say_goodbye]
+
+
+Processing HelloController#Say Hello (for 127.0.0.1 at 2009-09-28 13:36:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"Say Hello"}
+
+
+ActionController::UnknownAction (No action responded to Say Hello):
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-09-28 13:36:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+  [4;36;1mMessage Columns (0.009159)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.08191 (12 reqs/sec) | Rendering: 0.01445 (17%) | DB: 0.00916 (11%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#say_goodbye (for 127.0.0.1 at 2009-09-28 13:36:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_goodbye"}
+  [4;35;1mMessage Columns (0.011490)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_goodbye
+Completed in 0.06285 (15 reqs/sec) | Rendering: 0.00496 (7%) | DB: 0.01149 (18%) | 200 OK [http://localhost/hello/say_goodbye]
+
+
+Processing HelloController#Say Hello (for 127.0.0.1 at 2009-09-28 13:36:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"Say Hello"}
+
+
+ActionController::UnknownAction (No action responded to Say Hello):
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_with_rescue'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action_with_caching'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_with_filters'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process_with_session_management_support'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    :1:in `start'
+
+Rendering C:/Program Files/NetBeans 6.5.1/ruby2/jruby-1.1.4/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HelloController#say_goodbye (for 127.0.0.1 at 2009-09-28 13:37:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_goodbye"}
+  [4;36;1mMessage Columns (0.010882)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_goodbye
+Completed in 0.06335 (15 reqs/sec) | Rendering: 0.01213 (19%) | DB: 0.01088 (17%) | 200 OK [http://localhost/hello/say_goodbye]
+
+
+Processing HelloController#say_hello (for 127.0.0.1 at 2009-09-28 13:37:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_hello"}
+  [4;35;1mMessage Columns (0.010489)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.04856 (20 reqs/sec) | Rendering: 0.01117 (23%) | DB: 0.01049 (21%) | 200 OK [http://localhost/hello/say_hello]
+
+
+Processing HelloController#say_goodbye (for 127.0.0.1 at 2009-09-28 13:37:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_goodbye"}
+  [4;36;1mMessage Columns (0.010770)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_goodbye
+Completed in 0.06516 (15 reqs/sec) | Rendering: 0.00434 (6%) | DB: 0.01077 (16%) | 200 OK [http://localhost/hello/say_goodbye]
+
+
+Processing HelloController#say_hello (for 127.0.0.1 at 2009-09-28 13:37:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_hello"}
+  [4;35;1mMessage Columns (0.009697)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.05550 (18 reqs/sec) | Rendering: 0.00980 (17%) | DB: 0.00970 (17%) | 200 OK [http://localhost/hello/say_hello]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-10-05 10:11:13) [GET]
+  Session ID: 4a590899aeb826e326cc3ad19b87f609
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001021)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000927)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMessage Columns (0.135723)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.22636 (4 reqs/sec) | Rendering: 0.02794 (12%) | DB: 0.13767 (60%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#say_goodbye (for 127.0.0.1 at 2009-10-05 10:11:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_goodbye"}
+  [4;35;1mMessage Columns (0.010215)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_goodbye
+Completed in 0.04256 (23 reqs/sec) | Rendering: 0.00717 (16%) | DB: 0.01021 (23%) | 200 OK [http://localhost/hello/say_goodbye]
+
+
+Processing HelloController#say_hello (for 127.0.0.1 at 2009-10-05 10:11:22) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_hello"}
+  [4;36;1mMessage Columns (0.008803)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.04173 (23 reqs/sec) | Rendering: 0.00502 (12%) | DB: 0.00880 (21%) | 200 OK [http://localhost/hello/say_hello]
+
+
+Processing HelloController#index (for 127.0.0.1 at 2009-10-05 10:23:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"index"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000953)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mMessage Columns (0.018398)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.10665 (9 reqs/sec) | Rendering: 0.03504 (32%) | DB: 0.02035 (19%) | 200 OK [http://localhost/]
+
+
+Processing HelloController#say_goodbye (for 127.0.0.1 at 2009-10-05 10:23:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_goodbye"}
+  [4;35;1mMessage Columns (0.009224)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_goodbye
+Completed in 0.04498 (22 reqs/sec) | Rendering: 0.00698 (15%) | DB: 0.00922 (20%) | 200 OK [http://localhost/hello/say_goodbye]
+
+
+Processing HelloController#say_hello (for 127.0.0.1 at 2009-10-05 10:23:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--cd942d90d4e2470ffa9f302694bb4518d524631a
+  Parameters: {"controller"=>"hello", "action"=>"say_hello"}
+  [4;36;1mMessage Columns (0.009306)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering hello/say_hello
+Completed in 0.03706 (26 reqs/sec) | Rendering: 0.00491 (13%) | DB: 0.00931 (25%) | 200 OK [http://localhost/hello/say_hello]
